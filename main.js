@@ -3,7 +3,7 @@
 // Сдлеать команду /flip, которая выдаёт результат орёл/решка.
 // Попробовать красиво оформить код.
 const Discord = require('discord.js');
-const botconfig = require('./botconfig.json');
+const bot_config = require('./config.js');
 const client = new Discord.Client();
 
 String.prototype.capitalize = function() {
@@ -163,4 +163,4 @@ client.on('message', msg => {
     }
 });
 
-client.login(botconfig.token);
+client.login(bot_config.token);
